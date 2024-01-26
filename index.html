@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Choix de Spécialité</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+<div id="questionnaire">
+    <h1>Quelle spécialité est faite pour toi ?</h1>
+
+    <!-- Question 1 -->
+    <div class="question">
+        <p>Aimes-tu résoudre des problèmes ?</p>
+        <select id="probleme-resoudre">
+            <option value="oui">Oui</option>
+            <option value="non">Non</option>
+        </select>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+        <p>Aimes-tu apprendre par cœur ?</p>
+        <input type="range" id="apprendre-coeur" min="0" max="10">
+    </div>
+
+    <button onclick="evaluerResultats()">Soumettre</button>
+</div>
+
+<div id="resultats"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
